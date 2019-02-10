@@ -36,7 +36,7 @@ int LinkedList<T>::size() const
 		depth++;
 		traverser = traverser->getNext();
 	}
-	return(0);
+	return(depth);
 }
 
 template <typename T>
