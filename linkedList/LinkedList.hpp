@@ -29,14 +29,7 @@ bool LinkedList<T>::isEmpty() const
 template <typename T>
 int LinkedList<T>::size() const
 {
-	Node<T>* traverser = m_front;
-	int depth = 0;
-	while(nullptr != traverser)
-	{
-		depth++;
-		traverser = traverser->getNext();
-	}
-	return(depth);
+	return(m_size);
 }
 
 template <typename T>
